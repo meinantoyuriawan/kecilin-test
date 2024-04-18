@@ -1,10 +1,13 @@
 from app import app
 
-import app
-
-from flask.cli import FlaskGroup
-
-cli = FlaskGroup(app)
-
 if __name__ == "__main__":
-    cli()
+    app.run(host='0.0.0.0',
+            port= 3000,
+            debug= False)
+
+# from flask.cli import FlaskGroup
+
+# cli = FlaskGroup(app)
+
+# if __name__ == "__main__":
+#     cli()
